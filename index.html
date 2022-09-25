@@ -61,7 +61,7 @@
     <h1 class="first-large-words">
         Ефективні рішення для вашого бізнесу
     </h1>
-    <button type="button" class="header-btn" >Замовити послугу</button>
+    <button type="button" class="header-btn" data-modal-open >Замовити послугу</button>
 </div>
 </section>
 <!-- Описи чотирьох слів -->
@@ -475,13 +475,13 @@
         </div>
     </div>
 
-
-
-   
 </footer>
-         
-
-    
+<div class="backdrop are-hidden" data-modal>
+<div class="modal">
+    <button type="button" class="close-button" data-modal-close>X</button>
+  </div>
+ </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
