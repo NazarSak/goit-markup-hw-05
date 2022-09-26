@@ -31,9 +31,6 @@
     padding-left: 0;
   }
    
-a,button{
-  transition: color 250ms;
-}
 
 svg{
   transition: color 250ms;
@@ -66,6 +63,10 @@ svg{
   .container-header{
   display: flex;
   align-items: center;
+  }
+
+  .general-work-photo{
+    position: relative;
   }
   
   
@@ -234,6 +235,7 @@ border-radius: 2px;
   justify-content: center;
   text-align: center;
   display: flex;
+  transition: color 250ms, background-color 250ms
   }
 
   .header-contact:hover,
@@ -487,8 +489,11 @@ color: var(--first-text-color);
     border-radius: 4px;
     padding: 6px 22px;
     cursor: pointer;
+    transition: color 250ms,background-color 250ms ;
   }
   
+
+
   .header-btn-other:hover,
   .header-btn-other:focus{
     color:var(--white-text-color);
@@ -748,15 +753,15 @@ transition: transform 1000ms ;
   transform: translateY(0);
 }
 
-.exercise-one{
+/* .exercise-one{
  position: relative; 
-}
+} */
 
 .exercise-one-h3{
 position: absolute;
 font-weight: 700;
 font-size: 14px;
-line-height: 1.1;
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
@@ -796,11 +801,15 @@ background:#fff;
   position: absolute;
   right: 10px;
   top: 10px;
-  background: grey;
-  color: white;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background: var(--white-text-color);
+border: 1px solid rgba(0, 0, 0, 0.1);
+color: var(--only-black-color);
+cursor: pointer;
+right: 8px;
+top: 8px;
 }
 
 button{
